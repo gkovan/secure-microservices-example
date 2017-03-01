@@ -1,5 +1,16 @@
-//apply plugin: 'java'
-apply plugin: 'maven'
+buildscript {
+	ext {
+		springBootVersion = '1.5.1.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
 apply plugin: 'eclipse-wtp'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'war'
@@ -8,17 +19,6 @@ tasks.withType(JavaCompile) {
 	options.encoding = 'UTF-8'
 }
 
-buildscript {
-	ext {
-		springBootVersion = '1.5.1.RELEASE'
-	}
-	repositories {
-		maven { url "http://repo.maven.apache.org/maven2" }
-	}
-	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-	}
-}
 
 war {
 	baseName = 'secure-ms-sample-provider'
@@ -31,7 +31,11 @@ targetCompatibility = 1.8
 
 // In this section you declare where to find the dependencies of your project
 repositories {
-	maven { url "http://repo.maven.apache.org/maven2" }
+	mavenCentral()
+}
+
+configurations {
+	providedRuntime
 }
 
 eclipse.wtp.facet {
@@ -44,19 +48,18 @@ eclipse.wtp.facet {
 }
 
 dependencies {
-    compile(group: 'org.springframework.boot', name: 'spring-boot-starter-web', version:'1.5.1.RELEASE') {
-		exclude(module: 'spring-boot-starter-tomcat')
-    }
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version:'1.5.1.RELEASE'
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version:'1.5.1.RELEASE'
-    compile group: 'io.jsonwebtoken', name: 'jjwt', version:'0.7.0'
-    compile group: 'org.apache.commons', name: 'commons-lang3', version:'3.5'
-    compile group: 'joda-time', name: 'joda-time', version:'2.9.7'
-    compile group: 'io.springfox', name: 'springfox-swagger2', version:'2.6.1'
-    compile group: 'io.springfox', name: 'springfox-swagger-ui', version:'2.6.1'
-    testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version:'1.5.1.RELEASE') {
-		exclude(module: 'commons-logging')
-    }
-    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version:'1.5.1.RELEASE'
-    providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version:'3.1.0'
+    compile('org.springframework.boot:spring-boot-starter-actuator')
+    compile('org.springframework.boot:spring-boot-starter-security')
+    
+    compile('io.jsonwebtoken:jjwt:0.7.0')
+    compile('org.apache.commons:commons-lang3:3.5')
+    compile('joda-time:joda-time:2.9.7')
+
+    compile('io.springfox:springfox-swagger2:2.6.1')
+    compile('io.springfox:springfox-swagger-ui:2.6.1')
+
+    providedCompile('javax.servlet:javax.servlet-api:3.1.0')
+    providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
+
+    testCompile('org.springframework.boot:spring-boot-starter-test')
 }
