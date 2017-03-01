@@ -134,6 +134,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 //     	pathsToSkip.add(skipSwaggerJson);
 //     	pathsToSkip.add(skipSwaggerYaml);
 //     	pathsToSkip.add(skipSnoop);
+     	pathsToSkip.add("/actuator/health");
      	pathsToSkip.add("/api/token");
      	pathsToSkip.add("/api/actuatortoken");
      	pathsToSkip.add("/api-docs/**");
