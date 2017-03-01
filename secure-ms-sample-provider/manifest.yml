@@ -1,0 +1,11 @@
+---
+applications:
+- path: build/libs/secure-ms-sample-provider.war
+  buildpack: liberty-for-java
+  name: secure-ms-sample-provider
+  memory: 512M
+  instances: 1
+  host: secure-ms-sample-provider
+  domain: mybluemix.net
+  env:
+    JBP_CONFIG_LIBERTY: 'app_archive: {features: [jndi-1.0, servlet-3.1, jsp-2.3, cloudAutowiring-1.0]}'

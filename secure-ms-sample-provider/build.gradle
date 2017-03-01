@@ -22,7 +22,7 @@ buildscript {
 
 war {
 	baseName = 'secure-ms-sample-provider'
-	version = '0.0.1'
+	version = null
 }
 
 sourceCompatibility = 1.8
