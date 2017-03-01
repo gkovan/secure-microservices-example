@@ -17,6 +17,6 @@ include 'services:webservice'
 */
 
 rootProject.name = 'secure-ms-sample-provider'
+
 include ':secure-ms-common-jwt'
 project(':secure-ms-common-jwt').projectDir = new File(settingsDir, '../secure-ms-common-jwt')
-//includeFlat 'secure-ms-common-jwt'

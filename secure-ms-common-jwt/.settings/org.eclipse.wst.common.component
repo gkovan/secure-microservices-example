@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="2.0">
+	<wb-module deploy-name="secure-ms-common-jwt">
+		<wb-resource deploy-path="/" source-path="src/main/java"/>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-security/1.5.1.RELEASE/a7305b81937d3391108a097d1236f9d540009780/spring-boot-starter-security-1.5.1.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/io.jsonwebtoken/jjwt/0.7.0/f042fe2676bfdc2091545152e47d77e11999946d/jjwt-0.7.0.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.5/6c6c702c89bfff3cd9e80b04d668c5e190d588c6/commons-lang3-3.5.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.7/6eb2e87ddb09e944bb88f06f19ba0638d4607ffd/joda-time-2.9.7.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/1.5.1.RELEASE/5fb187e6a363b9145e3f7f18130ba64e9e22dad8/spring-boot-starter-1.5.1.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.3.6.RELEASE/d70b2393d380cd468d9a14969efaf9022c67c0/spring-aop-4.3.6.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/4.2.1.RELEASE/fe8b195415728d8c380531531ce0da5b40bd547f/spring-security-config-4.2.1.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.2.1.RELEASE/31a526327f419664fe27455d5b2538a1b4aa5dee/spring-security-web-4.2.1.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.2/1f12816593c1422be957471c98a80bfbace60fa2/jackson-databind-2.8.2.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.1.RELEASE/670ebd283098aa2d8a397af84fbe6ea152a4d8fa/spring-boot-1.5.1.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/1.5.1.RELEASE/251d960da2d5adfd55cf0281fcdfa69ab525a36d/spring-boot-autoconfigure-1.5.1.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/1.5.1.RELEASE/889d35cc87daa453a823056798a4039cd321952a/spring-boot-starter-logging-1.5.1.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.3.6.RELEASE/690da099c3c2d2536210f0fd06ff3f336de43ad9/spring-core-4.3.6.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.17/7a27ea250c5130b2922b86dea63cbb1cc10a660c/snakeyaml-1.17.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.3.6.RELEASE/1585715ed598b76a23dac931c27aa039b189eafb/spring-beans-4.3.6.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/4.2.1.RELEASE/4e8ae0eb3218e1cacc3d7bd2eb41929799340618/spring-security-core-4.2.1.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.5.RELEASE/6641daccf2fddafc8358144f3a4f999130fdf144/spring-web-4.3.5.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.0/45b426f7796b741035581a176744d91090e2e6fb/jackson-annotations-2.8.0.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.2/80004060cc6f71a027b81e89ef4d74628f824f/jackson-core-2.8.2.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.9/978cd9fbb43b7abed6379d7b02de052d216e30fc/logback-classic-1.1.9.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.22/86ceac14535af5a42c8fb0d06d79b925dd3cb263/jcl-over-slf4j-1.7.22.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.22/b0429e950b3d2bc2c39c1bacafac753edbe3781c/jul-to-slf4j-1.7.22.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/org.slf4j/log4j-over-slf4j/1.7.22/a527c37e9ca6c3d19ba298edd4aa344ca751a203/log4j-over-slf4j-1.7.22.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.9/e05d0cb67220937c32d7b4e5a47f967605376f63/logback-core-1.1.9.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.22/a1c83373863cec7ae8d89dc1c5722d8cb6ec0309/slf4j-api-1.7.22.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.3.6.RELEASE/5f3041020113e3202a7ae9defe36e7b5d2fb87eb/spring-context-4.3.6.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.3.6.RELEASE/13b53568cfd7b308e70efcbac6cdd0c5d597ba1/spring-expression-4.3.6.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+	</wb-module>
+</project-modules>

@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import com.ibm.microservice.sample.security.auth.jwt.JWTTokenService;
-import com.ibm.microservice.sample.security.config.JWTSettings;
+import com.ibm.microservice.security.auth.jwt.JWTTokenService;
+import com.ibm.microservice.security.config.JWTSettings;
 
 @RestController
 public class SnoopClientResource {

@@ -11,7 +11,11 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
+	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="/Users/jedward2/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-security/1.5.1.RELEASE/a7305b81937d3391108a097d1236f9d540009780/spring-boot-starter-security-1.5.1.RELEASE.jar" sourcepath="/Users/jedward2/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-security/1.5.1.RELEASE/339dac62fb1183533d952c0c84a92ad9a2d26085/spring-boot-starter-security-1.5.1.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="/Users/jedward2/.gradle/caches/modules-2/files-2.1/io.jsonwebtoken/jjwt/0.7.0/f042fe2676bfdc2091545152e47d77e11999946d/jjwt-0.7.0.jar" sourcepath="/Users/jedward2/.gradle/caches/modules-2/files-2.1/io.jsonwebtoken/jjwt/0.7.0/b75369bdfec0a18d83643580b1b2e608f4fa3ba4/jjwt-0.7.0-sources.jar"/>
 	<classpathentry kind="lib" path="/Users/jedward2/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.5/6c6c702c89bfff3cd9e80b04d668c5e190d588c6/commons-lang3-3.5.jar" sourcepath="/Users/jedward2/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.5/f7d878153e86a1cdddf6b37850e00a9f8bff726f/commons-lang3-3.5-sources.jar"/>
