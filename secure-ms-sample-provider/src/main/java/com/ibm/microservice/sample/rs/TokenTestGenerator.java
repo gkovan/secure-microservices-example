@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ibm.microservice.sample.security.auth.jwt.JWTTokenService;
+import com.ibm.microservice.security.auth.jwt.JWTTokenService;
 
 @RestController
 public class TokenTestGenerator {

@@ -1,4 +1,4 @@
-package com.ibm.microservice.sample.security.config;
+package com.ibm.microservice.security.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;

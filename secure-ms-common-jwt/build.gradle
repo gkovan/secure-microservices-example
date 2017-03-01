@@ -1,0 +1,30 @@
+apply plugin: 'eclipse'
+apply plugin: 'java'
+
+
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+jar {
+	baseName = 'secure-ms-common-jwt'
+	version = '0.0.1'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+	mavenCentral()
+}
+
+// In this section you declare the dependencies for your production and test code
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-security:1.5.1.RELEASE')
+    compile('io.jsonwebtoken:jjwt:0.7.0')
+    compile('org.apache.commons:commons-lang3:3.5')
+    compile('joda-time:joda-time:2.9.7')
+    compileOnly('javax.servlet:javax.servlet-api:3.1.0')
+}

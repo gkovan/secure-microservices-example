@@ -1,4 +1,4 @@
-package com.ibm.microservice.sample.security.model;
+package com.ibm.microservice.security.model;
 
 import java.util.List;
 

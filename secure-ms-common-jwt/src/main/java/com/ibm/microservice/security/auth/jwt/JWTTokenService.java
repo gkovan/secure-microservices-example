@@ -1,4 +1,4 @@
-package com.ibm.microservice.sample.security.auth.jwt;
+package com.ibm.microservice.security.auth.jwt;
 
 import java.util.Arrays;
 import java.util.List;
@@ -10,8 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.stereotype.Component;
 
-import com.ibm.microservice.sample.security.config.JWTSettings;
-import com.ibm.microservice.sample.security.exceptions.JWTExpiredTokenException;
+import com.ibm.microservice.security.config.JWTSettings;
+import com.ibm.microservice.security.exceptions.JWTExpiredTokenException;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;

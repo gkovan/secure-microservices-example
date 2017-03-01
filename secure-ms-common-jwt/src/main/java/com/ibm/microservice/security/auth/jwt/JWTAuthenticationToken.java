@@ -1,4 +1,4 @@
-package com.ibm.microservice.sample.security.auth.jwt;
+package com.ibm.microservice.security.auth.jwt;
 
 import java.util.Collection;
 
@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.security.authentication.AbstractAuthenticationToken;
 import org.springframework.security.core.GrantedAuthority;
 
-import com.ibm.microservice.sample.security.model.UserContext;
+import com.ibm.microservice.security.model.UserContext;
 
 public class JWTAuthenticationToken extends AbstractAuthenticationToken {
 	private static final Logger logger = LoggerFactory.getLogger(JWTAuthenticationToken.class);

@@ -1,4 +1,4 @@
-package com.ibm.microservice.sample.security.auth.jwt;
+package com.ibm.microservice.security.auth.jwt;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -13,7 +13,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.stereotype.Component;
 
-import com.ibm.microservice.sample.security.model.UserContext;
+import com.ibm.microservice.security.model.UserContext;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;

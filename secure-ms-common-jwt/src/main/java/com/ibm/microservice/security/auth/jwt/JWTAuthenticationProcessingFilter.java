@@ -1,4 +1,4 @@
-package com.ibm.microservice.sample.security.auth.jwt;
+package com.ibm.microservice.security.auth.jwt;
 
 import java.io.IOException;
 
@@ -19,7 +19,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter;
 import org.springframework.security.web.util.matcher.RequestMatcher;
 
-import com.ibm.microservice.sample.security.config.JWTSettings;
+import com.ibm.microservice.security.config.JWTSettings;
 
 public class JWTAuthenticationProcessingFilter extends AbstractAuthenticationProcessingFilter {
 	private static final Logger logger = LoggerFactory.getLogger(JWTAuthenticationProcessingFilter.class);

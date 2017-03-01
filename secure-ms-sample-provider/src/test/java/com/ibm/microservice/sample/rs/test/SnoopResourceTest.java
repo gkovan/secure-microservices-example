@@ -16,8 +16,8 @@ import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.ibm.microservice.sample.security.auth.jwt.JWTTokenService;
-import com.ibm.microservice.sample.security.config.JWTSettings;
+import com.ibm.microservice.security.auth.jwt.JWTTokenService;
+import com.ibm.microservice.security.config.JWTSettings;
 
 
 //@RunWith(SpringJUnit4ClassRunner.class)

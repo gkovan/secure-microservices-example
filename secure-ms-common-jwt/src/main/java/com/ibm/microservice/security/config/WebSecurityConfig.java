@@ -1,4 +1,4 @@
-package com.ibm.microservice.sample.security.config;
+package com.ibm.microservice.security.config;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,9 +20,9 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
-import com.ibm.microservice.sample.security.auth.jwt.JWTAuthenticationProcessingFilter;
-import com.ibm.microservice.sample.security.auth.jwt.JWTAuthenticationProvider;
-import com.ibm.microservice.sample.security.auth.jwt.SkipPathRequestMatcher;
+import com.ibm.microservice.security.auth.jwt.JWTAuthenticationProcessingFilter;
+import com.ibm.microservice.security.auth.jwt.JWTAuthenticationProvider;
+import com.ibm.microservice.security.auth.jwt.SkipPathRequestMatcher;
 
 @Configuration
 @EnableWebSecurity

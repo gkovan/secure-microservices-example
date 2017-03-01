@@ -1,4 +1,4 @@
-package com.ibm.microservice.sample.security.auth.jwt;
+package com.ibm.microservice.security.auth.jwt;
 
 import java.util.List;
 import java.util.stream.Collectors;

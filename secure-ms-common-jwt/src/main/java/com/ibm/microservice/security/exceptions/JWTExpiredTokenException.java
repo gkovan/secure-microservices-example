@@ -1,4 +1,4 @@
-package com.ibm.microservice.sample.security.exceptions;
+package com.ibm.microservice.security.exceptions;
 
 import org.springframework.security.core.AuthenticationException;
 
