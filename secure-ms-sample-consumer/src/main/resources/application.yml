@@ -1,0 +1,57 @@
+debug: false
+---
+spring:
+ profiles: development
+ main:
+  banner-mode: "off"
+ application:
+  name: secure-ms-sample-consumer
+#security:
+#  user:
+#    name: admin
+#    password: secret
+microservice:
+  endpoint:
+    snoop: http://jxenon.local:9080/secure-ms-sample-provider
+management:
+  context-path: /actuator
+  security:
+    roles: ACTUATOR
+#    enabled: false
+server:
+#  servlet-path: /api
+
+springfox.documentation.swagger.v2:
+  path: /api-docs
+demo.security.jwt:
+  tokenExpirationTime: 15 # Number of minutes
+  tokenIssuer: ${spring.application.name:secure-ms-sample-consumer}
+  tokenSigningKey: xm8EV6Hy5RMFK4EEACIDAwQus
+---  
+spring:
+ profiles: cloud
+ main:
+  banner-mode: "off" 
+ application:
+  name: ${vcap.application.application_name:secure-ms-sample-consumer}
+#security:
+#  user:
+#    name: admin
+#    password: secret
+management:
+  context-path: /actuator
+  security:
+    roles: ACTUATOR
+#    enabled: false
+#server:
+#  servlet-path: /api
+springfox.documentation.swagger.v2:
+  path: /api-docs
+demo.security.jwt:
+  tokenExpirationTime: 15 # Number of minutes
+  tokenIssuer: ${spring.application.name:secure-ms-sample-consumer}
+  tokenSigningKey: xm8EV6Hy5RMFK4EEACIDAwQus
+microservice:
+  endpoint:
+    snoop: http://secure-ms-sample-provider.mybluemix.net
+

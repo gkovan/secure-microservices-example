@@ -1,0 +1,13 @@
+---
+applications:
+- path: build/libs/secure-ms-sample-consumer.war
+  buildpack: liberty-for-java
+  name: secure-ms-sample-consumer
+  memory: 512M
+  instances: 1
+  host: secure-ms-sample-consumer
+  domain: mybluemix.net
+  env:
+    JBP_CONFIG_LIBERTY: 'app_archive: {features: [jndi-1.0, servlet-3.1, jsp-2.3, cloudAutowiring-1.0]}'
+    JBP_CONFIG_SPRINGAUTORECONFIGURATION: 'enabled: false'
+    SPRING_PROFILES_DEFAULT: cloud

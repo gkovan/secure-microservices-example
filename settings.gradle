@@ -1,1 +1,1 @@
-include 'secure-ms-sample-provider'
+include 'secure-ms-sample-provider', 'secure-ms-sample-consumer'
