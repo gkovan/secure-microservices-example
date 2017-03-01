@@ -22,7 +22,7 @@ springfox.documentation.swagger.v2:
   path: /api-docs
 demo.security.jwt:
   tokenExpirationTime: 15 # Number of minutes
-  tokenIssuer: ${spring.application.name:jce-demo-secure-mvn1}
+  tokenIssuer: ${spring.application.name:secure-ms-sample-provider}
   tokenSigningKey: xm8EV6Hy5RMFK4EEACIDAwQus
 ---  
 spring:
@@ -46,5 +46,5 @@ springfox.documentation.swagger.v2:
   path: /api-docs
 demo.security.jwt:
   tokenExpirationTime: 15 # Number of minutes
-  tokenIssuer: ${spring.application.name:jce-demo-secure-mvn1}
+  tokenIssuer: ${spring.application.name:secure-ms-sample-provider}
   tokenSigningKey: xm8EV6Hy5RMFK4EEACIDAwQus
