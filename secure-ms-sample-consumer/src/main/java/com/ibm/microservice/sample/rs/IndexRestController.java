@@ -16,8 +16,9 @@ import com.ibm.microservice.security.auth.jwt.JWTTokenService;
 import com.ibm.microservice.security.config.JWTSettings;
 
 @RestController
-public class SnoopClientResource {
-	private static final Logger logger = LoggerFactory.getLogger(SnoopClientResource.class);
+public class IndexRestController {
+	private static final Logger logger = LoggerFactory.getLogger(IndexRestController.class);
+	
 	private final RestTemplate restTemplate;
 	
 	@Autowired
@@ -26,24 +27,46 @@ public class SnoopClientResource {
 	@Autowired
 	private JWTSettings jwtSettings;
 	
-	@Value("${microservice.endpoint.snoop}")
-	private String snoopEndpoint;
+	@Value("${microservice.endpoint.ms1}")
+	private String ms1Endpoint;
 
+	@Value("${microservice.endpoint.ms2}")
+	private String ms2Endpoint;
 	
-	public SnoopClientResource() {
-		
+	public IndexRestController(){
 		this.restTemplate = new RestTemplate();
 	}
 	
-	@RequestMapping("/")
-	private ResponseEntity<String> snoopclient(){
+    @RequestMapping("/")
+    public String index() {
+    	logger.info("index called");
+        return
+                "<ul>" +
+                "<li><a href=\"/token\">Test Token</a>" +
+                   "<li><a href=\"/snoop\">Snoop</a>" +
+                   "<li><a href=\"/exception\">Exception</a>" +
+                "</ul>";
+    }
+
+    @RequestMapping("/token")
+    public ResponseEntity<String> testToken() {
+    	logger.info("testToken called");
+    	
+		String token = jwtTokenService.generateMSToken();
+		
+		logger.info("#$#$# token={}", token);
+		return ResponseEntity.ok(token);  	
+     }
+
+    @RequestMapping("/snoop")
+	public ResponseEntity<String> snoopclient(){
 		logger.info("snoopclient called");
 		String token = jwtTokenService.generateMSToken();
 		
 		HttpHeaders headers = new HttpHeaders();
 		headers.add(jwtSettings.getTokenHeaderParam(), "Bearer "+token);
 		
-		String url = snoopEndpoint+"/api/snoop";
+		String url = ms1Endpoint+"/api/snoop";
 		logger.info("url={}", url);
 		
 		ResponseEntity<String> entity = restTemplate.exchange(url, HttpMethod.GET, new HttpEntity<>(headers), String.class);
@@ -52,4 +75,11 @@ public class SnoopClientResource {
 				
 		return ResponseEntity.ok(entity.getBody());
 	}
+    
+    @RequestMapping("/exception")
+    public String exceptionClient() {
+    	logger.info("exception called");
+        return
+                "<b>exception</b>";
+    }
 }

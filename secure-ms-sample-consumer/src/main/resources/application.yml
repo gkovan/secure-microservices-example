@@ -12,7 +12,8 @@ spring:
 #    password: secret
 microservice:
   endpoint:
-    snoop: http://jxenon.local:9080/secure-ms-sample-provider
+    ms1: http://ms1-jp-secure-ms.mybluemix.net
+    ms2: http://ms2-jp-secure-ms.mybluemix.net    
 management:
   context-path: /actuator
   security:
@@ -53,5 +54,6 @@ demo.security.jwt:
   tokenSigningKey: xm8EV6Hy5RMFK4EEACIDAwQus
 microservice:
   endpoint:
-    snoop: https://secure-ms-sample-provider.mybluemix.net
-#    snoop: https://secure-ms-sample-provider.itdept.charlesedw.com
+    ms1: https://ms1-jp-secure-ms.mybluemix.net
+    ms2: https://ms2-jp-secure-ms.mybluemix.net
+#    ms1: https://secure-ms-sample-provider.itdept.charlesedw.com
