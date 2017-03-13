@@ -5,7 +5,7 @@ spring:
  main:
   banner-mode: "off"
  application:
-  name: secure-ms-sample-consumer
+  name: bff1-jp-secure-ms
 #security:
 #  user:
 #    name: admin
@@ -25,7 +25,7 @@ springfox.documentation.swagger.v2:
   path: /api-docs
 demo.security.jwt:
   tokenExpirationTime: 15 # Number of minutes
-  tokenIssuer: ${spring.application.name:secure-ms-sample-consumer}
+  tokenIssuer: ${spring.application.name:bff1-jp-secure-ms}
   tokenSigningKey: xm8EV6Hy5RMFK4EEACIDAwQus
 ---  
 spring:
@@ -33,7 +33,7 @@ spring:
  main:
   banner-mode: "off" 
  application:
-  name: ${vcap.application.application_name:secure-ms-sample-consumer}
+  name: ${vcap.application.application_name:bff1-jp-secure-ms}
 #security:
 #  user:
 #    name: admin
@@ -49,7 +49,7 @@ springfox.documentation.swagger.v2:
   path: /api-docs
 demo.security.jwt:
   tokenExpirationTime: 15 # Number of minutes
-  tokenIssuer: ${spring.application.name:secure-ms-sample-consumer}
+  tokenIssuer: ${spring.application.name:bff1-jp-secure-ms}
   tokenSigningKey: xm8EV6Hy5RMFK4EEACIDAwQus
 microservice:
   endpoint:
