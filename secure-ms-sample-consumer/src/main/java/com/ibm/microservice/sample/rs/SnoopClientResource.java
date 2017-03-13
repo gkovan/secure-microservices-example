@@ -37,6 +37,7 @@ public class SnoopClientResource {
 	
 	@RequestMapping("/")
 	private ResponseEntity<String> snoopclient(){
+		logger.info("snoopclient called");
 		String token = jwtTokenService.generateMSToken();
 		
 		HttpHeaders headers = new HttpHeaders();
@@ -47,13 +48,8 @@ public class SnoopClientResource {
 		
 		ResponseEntity<String> entity = restTemplate.exchange(url, HttpMethod.GET, new HttpEntity<>(headers), String.class);
 		
-		
-		//assertThat(entity.getStatusCode()).isEqualTo(HttpStatus.OK);
-		//assertThat(entity.getBody()).isNotEmpty();
-		
-		
-		System.out.println(entity.getBody());
-		
+		logger.debug(entity.getBody());
+				
 		return ResponseEntity.ok(entity.getBody());
 	}
 }

@@ -23,11 +23,6 @@ public class RestExceptionControllerAdvice {
 		errorMessage.setDeveloperMessage(errorStackTrace.toString());
 		
 		return ResponseEntity.status(errorMessage.getStatus()).contentType(org.springframework.http.MediaType.APPLICATION_JSON).body(errorMessage);
-		
-//		return Response.status(errorMessage.getStatus())
-//				.entity(errorMessage)
-//				.type(MediaType.APPLICATION_JSON)
-//				.build();
     }
 	
 	private void setHttpStatus(Throwable ex, ErrorMessage errorMessage) {

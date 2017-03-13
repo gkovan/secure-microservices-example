@@ -4,6 +4,9 @@
 		<property name="context-root" value="secure-ms-sample-consumer"/>
 		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/resources"/>
 		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/java"/>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/resource/secure-ms-common-jwt/secure-ms-common-jwt">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//Users/jedward2/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-actuator/1.5.1.RELEASE/4060b215004094bfd9f1bfa4f6e6e7ff09178e22/spring-boot-starter-actuator-1.5.1.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>

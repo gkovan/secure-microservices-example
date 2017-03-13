@@ -25,6 +25,8 @@ war {
 	version = null
 }
 
+bootRepackage.enabled = false
+
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
@@ -60,12 +62,9 @@ dependencies {
 	
 	compile('org.springframework.boot:spring-boot-starter-web')
 
+	compile project(':secure-ms-common-jwt')
+
     providedCompile('javax.servlet:javax.servlet-api:3.1.0')
-    
-    //compile project(':ReportHazardService')
-    
-    compile project(':secure-ms-common-jwt')
-    
     providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
 
     testCompile('org.springframework.boot:spring-boot-starter-test')

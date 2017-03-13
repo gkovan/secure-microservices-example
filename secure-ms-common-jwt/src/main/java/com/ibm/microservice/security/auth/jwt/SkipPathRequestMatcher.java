@@ -30,4 +30,15 @@ public class SkipPathRequestMatcher implements RequestMatcher {
         return processingMatcher.matches(request) ? true : false;
 	}
 
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("SkipPathRequestMatcher [pathsToSkipMmatchers=");
+		builder.append(pathsToSkipMmatchers);
+		builder.append(", processingMatcher=");
+		builder.append(processingMatcher);
+		builder.append("]");
+		return builder.toString();
+	}
+
 }

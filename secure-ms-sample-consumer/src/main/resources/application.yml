@@ -53,5 +53,5 @@ demo.security.jwt:
   tokenSigningKey: xm8EV6Hy5RMFK4EEACIDAwQus
 microservice:
   endpoint:
-    snoop: http://secure-ms-sample-provider.mybluemix.net
-
+    snoop: https://secure-ms-sample-provider.mybluemix.net
+#    snoop: https://secure-ms-sample-provider.itdept.charlesedw.com
