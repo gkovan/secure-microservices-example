@@ -77,9 +77,24 @@ public class IndexRestController {
 	}
     
     @RequestMapping("/exception")
-    public String exceptionClient() {
+    public ResponseEntity<String> exceptionClient() {
     	logger.info("exception called");
-        return
-                "<b>exception</b>";
+		String token = jwtTokenService.generateMSToken();
+		
+		HttpHeaders headers = new HttpHeaders();
+		headers.add(jwtSettings.getTokenHeaderParam(), "Bearer "+token);
+		
+		String url = ms2Endpoint+"/api/exception";
+		logger.info("url={}", url);
+		
+		try {
+			ResponseEntity<String> entity = restTemplate.exchange(url, HttpMethod.GET, new HttpEntity<>(headers), String.class);
+			
+			logger.debug(entity.getBody());
+			return ResponseEntity.ok(entity.getBody());
+		} catch (Exception e) {
+			logger.error("exceptionClient problem:", e);
+			return ResponseEntity.ok("exceptionClient problem: "+e.getMessage());
+		}
     }
 }
