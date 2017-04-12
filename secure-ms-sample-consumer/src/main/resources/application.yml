@@ -51,8 +51,7 @@ springfox.documentation.swagger.v2:
 demo.security.jwt:
   tokenExpirationTime: 15 # Number of minutes
   tokenIssuer: ${spring.application.name:bff1-jp-secure-ms}
-#  tokenSigningKey: xm8EV6Hy5RMFK4EEACIDAwQus
-  tokenSigningKey: 9xm8EV6Hy5RMFK4EEACIDAwQus
+  tokenSigningKey: xm8EV6Hy5RMFK4EEACIDAwQus
 microservice:
   endpoint:
     ms1: https://ms1-jp-secure-ms.mybluemix.net
