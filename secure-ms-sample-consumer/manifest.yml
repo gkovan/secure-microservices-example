@@ -12,4 +12,4 @@ applications:
     JBP_CONFIG_SPRINGAUTORECONFIGURATION: 'enabled: false'
     SPRING_PROFILES_DEFAULT: cloud
   services:
-  - demo-newrelic-xc
+  - newrelic
