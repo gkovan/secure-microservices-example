@@ -31,9 +31,12 @@ Step 0: Configure the example
    - Configure the consumer application.yml file (\secure-ms-sample-consumer\src\main\resources\application.yml)
       - This file is used to configure the consumer microservice.
       - Update the properties:
-             microservice.endpoint.ms1  
-             microservice.endpoint.ms2 
+             
+             - microservice.endpoint.ms1  
+             - microservice.endpoint.ms2 
+             
          with the value of the provider host you configured in the provider's manifest.yml file.
+      
       - This property is used by the consumer to create the url to call the provider.
       - Note: this property appears twice on lines 15,16 and also on 57,58.  Make sure to update all occurances.
 
