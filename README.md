@@ -3,8 +3,9 @@
 Note: This example is based on the github project: https://github.com/jedward19/bff-secure_offline_microservices
 
 This example consists of two microservices:
- -(microservice 1) secure-ms-sample-consumer
- -(microservice 2) secure-ms-sample-provider
+ - (microservice 1) secure-ms-sample-consumer.
+ - (microservice 2) secure-ms-sample-provider.
+
 The consumer calls the provider using a REST call.
 The invokation is secured using JWT tokens.
 JWT stands for JSON Web Tokens. See http://jwt.io for more info.
