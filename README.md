@@ -1,4 +1,4 @@
-# secure_offline_microservices
+# secure_microservices
 
 Note: This example is based on the github project: https://github.com/jedward19/bff-secure_offline_microservices
 
