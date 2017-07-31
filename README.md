@@ -66,7 +66,7 @@ The method public:  public String index() has the @RequestMapping("/")
      url 2: Snoop Token - calls the provider, passing a secure signed JWT token
      url 3: Exception - ???
 
-When the url 2 (Snoop Token request) is invoked, the following processing occurs:
+When url 2 (Snoop Token request) is invoked, the following processing occurs:
    - IndexRestController.java -> method snoopClient() gets invoked.
      - This method does the following things:
          - calls the JWTTokenService -> generateMSToken() method
