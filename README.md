@@ -182,7 +182,9 @@ The key steps would be as follows:
    - Execute program/script to get the secret key from Key Protect:  $secret-key
    - Secret key value inserted into cf command to create the CUPS service
   
-        bx cf cups shared-key-cups-service -p "{\"secret-key\":$secret-key"
+        bx cf cups shared-key-cups-service -p "{\"secret-key\":$secret-key"}
 
    - Consumer and Provider apps deployed to bluemix and bound to service 'shared-key-cups-service'
    - Consumer and Provider now have access to the secret key via the VCAP environment variable.
+
+See the git repo: https://github.com/gkovan/key-protect-and-cups-example for an example of java code that inovkes the Bluemix Key Protect service to get the secret shared key and outputs a bluemix command to generate a CUPS bluemix service.
