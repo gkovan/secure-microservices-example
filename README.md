@@ -77,7 +77,11 @@ When the url 2 (Snoop Token request) is invoked, the following processing occurs
 
 Implementation Details of the Provider Microservice:
 ----------------------------------------------------
-The Rest controller is ...
+The Rest controller for the provider is com.ibm.microservice.sample.rs.SnoopResource.java.
+Before the Rest Controller executes, JWT filter processing is executed to validate the JWT token.
+
+The following is a description of how the JWT filter processing works which leverages the Spring Security framework.
+
 
 The WebSecurityConfig class extends BaseWebSecurityConfig class which extends the Spring Security WebSecurityConfigureAdapter class.
 The WebSecurityConfig class configure method, sets a filter for the JWT authentication processing filter.
