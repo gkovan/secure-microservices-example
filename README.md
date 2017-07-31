@@ -1,10 +1,11 @@
-# secure_offline_microservices
+# secure_microservices
 
 Note: This example is based on the github project: https://github.com/jedward19/bff-secure_offline_microservices
 
 This example consists of two microservices:
- -(microservice 1) secure-ms-sample-consumer
- -(microservice 2) secure-ms-sample-provider
+ - (microservice 1) secure-ms-sample-consumer.
+ - (microservice 2) secure-ms-sample-provider.
+
 The consumer calls the provider using a REST call.
 The invokation is secured using JWT tokens.
 JWT stands for JSON Web Tokens. See http://jwt.io for more info.
@@ -30,9 +31,12 @@ Step 0: Configure the example
    - Configure the consumer application.yml file (\secure-ms-sample-consumer\src\main\resources\application.yml)
       - This file is used to configure the consumer microservice.
       - Update the properties:
-             microservice.endpoint.ms1  
-             microservice.endpoint.ms2 
+             
+             - microservice.endpoint.ms1  
+             - microservice.endpoint.ms2 
+             
          with the value of the provider host you configured in the provider's manifest.yml file.
+      
       - This property is used by the consumer to create the url to call the provider.
       - Note: this property appears twice on lines 15,16 and also on 57,58.  Make sure to update all occurances.
 
